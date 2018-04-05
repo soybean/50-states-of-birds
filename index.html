@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>50 States of Birds</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Baskerville" rel="stylesheet">
+  </head>
+  <body>
+    <section class="front-page">
+    <img src="birds-flight.jpg" width="200px" id="title-img">
+    <div id="top-title">50 States of Birds</div>
+    <div id="title-subtext">an interactive bird-listening tool</div>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-7'>
+          <svg id='svg-original'></svg>
+        </div>
+        <div class='col-md-5'>
+          <div id="info-box">
+            <div class="generic-title">
+              Click on a state <br> to get started!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="generic-title">
+          Think you know them all? Test your knowledge!
+        </div>
+      </div>
+      <div class = "quiz-container">
+      <div class="row">
+        <div class="col text-center">
+          <button type="button" onclick="scrollWin()" class="btn btn-outline-primary down-button">Take the quiz</button>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="quiz">
+      <div class="container">
+
+      <div class="row" id='0'>
+        <div class="col-md-5 text-center">
+          <div class="quiz-box">
+          <div class="quiz-num">1)</div>
+          <audio controls> 
+            <source src='audio/Colorado.mp3'>
+          </audio>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <svg id = 'svg-0'> 
+          </svg>
+        </div>
+      </div>
+
+      <div class="row" id='1'>
+        <div class="col-md-5 text-center">
+          <div class="quiz-box">
+          <div class="quiz-num">2)</div>
+          <audio controls> 
+            <source src='audio/Colorado.mp3'>
+          </audio>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <svg id='svg-1' class='svg-box'>
+          </svg>
+        </div>
+      </div>
+      <div class="row" id='2'>
+        <div class="col-md-5 text-center">
+          <div class="quiz-box">
+          <div class="quiz-num">3)</div>
+          <audio controls> 
+            <source src='audio/Colorado.mp3'>
+          </audio>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <svg id='svg-2' class='svg-box'>
+          </svg>
+        </div>
+      </div>
+
+      <div class="row" id='3'>
+        <div class="col-md-5 text-center">
+          <div class="quiz-box">
+          <div class="quiz-num">4)</div>
+          <audio controls> 
+            <source src='audio/Colorado.mp3'>
+          </audio>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <svg id='svg-3' class='svg-box'>
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="row" id='4'>
+        <div class="col-md-5 text-center">
+          <div class="quiz-box">
+          <div class="quiz-num">5)</div>
+          <audio controls> 
+            <source src='audio/Colorado.mp3'>
+          </audio>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <svg id='svg-4' class='svg-box'>
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="row" id='5'>
+        <div class="col-md-5 text-center">
+          <div class="quiz-box">
+          <div class="quiz-num">6)</div>
+          <audio controls> 
+            <source src='audio/Colorado.mp3'>
+          </audio>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <svg id='svg-5' class='svg-box'>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script>
+    function scrollWin() {
+    window.scrollTo(0, 5000);
+
+}
+    </script>
+    <script src = "birdmap.js"></script>
+</body>
+</html>
